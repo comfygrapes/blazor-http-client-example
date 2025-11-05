@@ -37,6 +37,15 @@
         <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
         <TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
         <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+        <GenerateAppInstallerFile>True</GenerateAppInstallerFile>
+        <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
+        <PackageCertificateThumbprint>69A231C1EDB0CC11C8EB33086BF9583242F313CB</PackageCertificateThumbprint>
+        <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
+        <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+        <AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
+        <GenerateTestArtifacts>True</GenerateTestArtifacts>
+        <AppInstallerUri>D:\Dev\Orgs\comfygrapes\Blazor.HTTPClientExample\Blazor.HttpClientExample.App\bin\Installer</AppInstallerUri>
+        <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
     </PropertyGroup>
 
     <ItemGroup>
