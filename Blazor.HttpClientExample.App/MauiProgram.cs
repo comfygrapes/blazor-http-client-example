@@ -17,7 +17,11 @@ namespace Blazor.HttpClientExample.App
 
             builder.Services.AddMauiBlazorWebView();
 
-            builder.Services.AddSingleton(sp => new HttpClient { BaseAddress = new Uri("https://jsonplaceholder.typicode.com") });
+            builder.Services.AddSingleton(sp => 
+                new HttpClient { 
+                    BaseAddress = new Uri("https://jsonplaceholder.typicode.com") 
+                }
+            );
 
             builder.Services.AddSingleton<IHomePresenter, HomePresenter>();
 
